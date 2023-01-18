@@ -1,4 +1,4 @@
-# Multiclass classification model using a custom convolutional neural network to detect Melanoma
+# Multiclass classification model using a custom CNN to detect Melanoma
 > The model analyzes a dataset of 2357 images of malignant and benign oncological diseases, builds a model using CNN for melanoma detection.
 
 
@@ -55,18 +55,17 @@ The data set contains the following diseases:
 ## Conclusions
 
 - Model 1: Basic Model
-  - Model Training has good accuracy - Training accuracy 81% but Validation Accuracy is low of 53%.
+  - Model Training has good accuracy - Training accuracy 87% but Validation Accuracy is low of 52%.
   - Model is Overfitting.
 
 - Model 2: Model 1 with Dropout Layer and Data Augmentation
-  - Dropout Layers are added
-  - Data Augmentation layer is added
-  - Accuracy of the model is reduced as compared to model 1 - Training Accuracy 56% and Validation Accuracy 51%
+  - Dropout Layers and Data Augmentation layer are added
+  - Accuracy of the model is reduced as compared to model 1 - Training Accuracy 60% and Validation Accuracy 55%
   - Model is Underfitting.
 
 - Model 3: Model 1 with Dropout Layer, Data Augmentation and a Class balanced Dataset
-  - To fix the class imbalance issue, Dataset Added using Augmentor (500 images added per class)
+  - To fix the class imbalance issue, Dataset is added using Augmentor (500 images added per class)
   - The accuracy of the model is improved. So we can consider this base CNN model with droput, data augmentation and class imbalance fix - as our final model.
-  - Final Accuracy of the model is - Training Accuracy 56% and Validation Accuracy 51%
+  - Final Accuracy of the model is - Training Accuracy 80% and Validation Accuracy 77%
 
 
